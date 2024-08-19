@@ -4,7 +4,7 @@ The `race.go` file demonstrates a simple example of a race condition in Go. A ra
 
 ## Code Overview
 
-The [main](cci:1://f:/GO/2/async/race/race.go:9:0-33:1) function in `race.go` launches 5 goroutines, each of which increments a shared `counters` map and a `totalCount` integer. The goroutines use a mutex (`mu`) to ensure exclusive access to the shared resources.
+The [main](cci:1://f:\GO\2\async\race\race.go:9:0-34:1) function in `race.go` launches 5 goroutines, each of which increments a shared `counters` map and a `totalCount` integer. The goroutines use a mutex (`mu`) to ensure exclusive access to the shared resources.
 
 ## Key Components
 
@@ -19,3 +19,7 @@ The program prints the final state of the `counters` map and the `totalCount` in
 ## Note
 
 This example demonstrates a simple race condition scenario. In a real-world scenario, you would want to handle errors and edge cases more robustly.
+
+## Description of race.go
+
+The `race.go` file contains a simple example of a race condition in Go. The [main](cci:1://f:\GO\2\async\race\race.go:9:0-34:1) function launches 5 goroutines, each of which increments a shared `counters` map and a `totalCount` integer. The goroutines use a mutex (`mu`) to ensure exclusive access to the shared resources. The program prints the final state of the `counters` map and the `totalCount` integer after all goroutines have completed.
